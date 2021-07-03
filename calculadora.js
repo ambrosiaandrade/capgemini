@@ -29,7 +29,7 @@ readline.question("Opção: ", (option) => {
 
 // Funções parteUm() e parteDois() são chamadas pelo switch
 function parteUm() {
-  console.log("\n1ªParte do desafio!\n");
+  console.log("\n1ª Parte do desafio!\n");
   readline.question("Quanto será investido? ", (value) => {
     let visualizacao = visualizations(value);
     console.log(
@@ -52,7 +52,7 @@ let relatorio = {};
 let isShared = false;
 
 function parteDois() {
-  console.log("\n2ªParte do desafio!\n");
+  console.log("\n2ª Parte do desafio!\n");
 
   // Cadastro do anúncio
   readline.question("Nome do anúncio: ", (nomeAnuncio) => {
@@ -143,7 +143,7 @@ function handleRelatorio(valorInvestido) {
 
   // Retornando o resultado
   console.log(
-    `\nRelatório!\n\n
+    `\nRelatório!\n
   Valor Total investido: ${anuncio.relatorio.valorTotalInvestido}
   Quantidade de visualizações: ${anuncio.relatorio.qtdMaxVisualizacoes}
   Quantidade de cliques: ${anuncio.relatorio.qtdMaxCliques}
